@@ -1,3 +1,3 @@
-const { actionHandlers } = require('./src/service')
+const { actionHandlers } = require('./src/index')
 
 exports.actions = actionHandlers

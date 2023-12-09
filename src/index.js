@@ -1,3 +1,5 @@
+const { actionHandlers } = require('./service')
+
 module.exports = {
-  ...require('./service'),
+  actionHandlers,
 }
