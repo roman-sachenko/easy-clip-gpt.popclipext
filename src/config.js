@@ -20,7 +20,7 @@ const PROMPT = {
   CONVERT_TO_CODE: {
     title: 'Convert to Code',
     promptText:
-      'Convert the given description into a JavaScript code snippet. Ensure the code accurately represents the described functionality: \n\n',
+      'Convert the given description into a code snippet. If not language provided in request, use JavaScript. Ensure the code accurately represents the described functionality: \n\n',
     icon: 'symbol:function',
   },
   FORMAT_AS_TICKET: {
