@@ -1,0 +1,31 @@
+{
+  "name": "easy-clip-gtp",
+  "icon": "iconify:logos:openai-icon",
+  "identifier": "dev.roman-sachenko.easy-clip-gpt",
+  "description": "Easy-Clip-GTP is a PopClip extension that enhances text processing using OpenAI's GPT models. Simply select text to summarize, refactor code, convert descriptions into code snippets, or format text into structured ticket formats. Set your AI model and API key, and let Easy-Clip-GTP handle the rest, displaying results in a way that suits your workflow. It's a handy tool for anyone looking to quickly process text with the power of AI.",
+  "entitlements": ["network"],
+  "requirements": ["text", "paste"],
+  "macosVersion": "14.0",
+  "popclipVersion": 4225,
+  "module": "main.js",
+  "app": {
+    "name": "ChatGPT",
+    "link": "https://openai.com/blog/chatgpt"
+  },
+  "options": [
+    {
+      "identifier": "apiKey",
+      "label": "API Key",
+      "type": "string",
+      "description": "Open AI API Key; Help https://platform.openai.com/account/api-keys"
+    },
+    {
+      "identifier": "aiModel",
+      "label": "AI Model",
+      "type": "multiple",
+      "defaultValue": "gpt-3.5-turbo",
+      "description": "Open AI Model",
+      "values": ["gpt-4", "gpt-3.5-turbo"]
+    }
+  ]
+}
