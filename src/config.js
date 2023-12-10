@@ -31,14 +31,14 @@ const PROMPT = {
   },
 }
 
-const config = {
+const config = Object.freeze({
   clients: {
     openAi: {
       ApiUrl: 'https://api.openai.com/v1/chat/completions',
     },
   },
   prompt: PROMPT,
-}
+})
 
 module.exports = {
   config,
